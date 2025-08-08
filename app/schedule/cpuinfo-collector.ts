@@ -10,6 +10,6 @@ export default class CpuInfoCollector  extends Subscription {
   }
 
   async subscribe() {
-    this.ctx.app.message.sendToAgent('sysinfo-refresh', 'refresh');
-
+    this.ctx.app.messenger.sendToAgent('sysinfo-refresh', 'refresh');
+  }
 }
